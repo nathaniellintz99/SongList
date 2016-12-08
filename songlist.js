@@ -10,14 +10,14 @@ function Song(title,artist,album,year)
   this.album = album;
   this.year = year;
   this.toString = function(){
-    return this.title + " by " + this.artist;
+    return title + " by " + artist + " Album: " + album;
   }
   this.releaseInfo = function(){
-    return "Released on " + this.album + " in " + this.year;
+    return "Released on " + album + " in " + year;
   };
   this.listened = 0;
   this.play = function(){
-    this.listened++;
+    listened++;
   };
 }
 
